@@ -151,7 +151,8 @@ class Config
             'base_uri' => $this->getEndpoint(),
             'headers'  => [
                 'Authorization' => "Bearer " . $this->jwt(),
-            ]
+            ],
+            'verify' =>false
         ]);
     }
 
